@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Chat App</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"/>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+      integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img src="https://img1.wsimg.com/isteam/ip/d982021e-fc03-443a-819c-0ce130820b9e/TPC%20Three%20Full%20Logo.png/:/rs=w:96,h:100,cg:true,m/cr=w:96,h:100/qt=q:95">
+    <br>
+    <div class="content">{% block content %} {% endblock %}</div>
+  </body>
+</html>
