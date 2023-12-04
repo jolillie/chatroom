@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Web Chatroom</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <img src=""> {% comment %} add image URL here {% endcomment %}
+    <br>
+    <form action="/start_game" method="get">
+          <button name="start_game" type="submit" class="create-btn">Start Game</button>
+          <br>
+    </form>
+    <form action="/join_game" method="get">
+        <button name="join_game" type="submit" class="join-btn">Join Game</button>
+        <br>
+  </form>
+</body>
+</html>
